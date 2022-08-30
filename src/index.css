@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  min-height: 200vh;
+}
+
+a {
+  color: white;
+  text-transform: capitalize;
+}
+
+nav.sticky {
+  background-color: white;
+  top: 10px
+}
+
+nav.sticky ul li a,
+ul li a>svg {
+  color: #541554;
+}
+
+nav.sticky .talkToSales {
+  color: #541554;
+  border-color: #541554;
+
+}
+
+nav.sticky .tryForFree {
+  background-color: #541554;
+  color: white;
+}
