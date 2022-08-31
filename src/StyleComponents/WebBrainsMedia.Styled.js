@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
 width:100%;
 display:flex;
-padding:20px 50px;
+padding:20px 120px;
 justify-content:space-between;
 background:transparent;
 position:fixed;
@@ -47,7 +47,7 @@ width:100%;
 background:#541554;
 display:flex;
 justify-content:space-between;
-padding-left:50px;
+padding-left:120px;
 `
 export const Title = styled.h1`
 color:white;
@@ -67,3 +67,43 @@ export const Span = styled.span`
 color:#ecb22e;
 `
 
+//brand section
+export const BrandSection = styled.section`
+padding:50px 0;
+background:#f4ede4;
+
+`
+export const H3 = styled.h3`
+text-align:center;
+font-size:.875rem;
+text-transform:uppercase;
+`
+export const BrandIconCont = styled.div`
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px
+`
+export const BrandTwoSideContent = styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:100px;
+margin-top:70px;
+padding:0 120px;
+`
+export const ResponseTitle = styled.h4`
+font-size:2.5rem;
+text-transform:capitalize;
+`
+export const ResponseDesc = styled.p`
+font-size: 18px;
+line-height:28px;
+margin:30px 0;
+`
+export const ResponseExternalLink = styled.a`
+color:#1264a3;
+display: flex;
+align-items:center;
+gap:10px
+`

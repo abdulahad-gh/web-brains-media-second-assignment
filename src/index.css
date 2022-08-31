@@ -21,7 +21,7 @@ nav.sticky {
 }
 
 nav.sticky ul li a,
-ul li a>svg {
+nav.sticky li .logo {
   color: #541554;
 }
 
