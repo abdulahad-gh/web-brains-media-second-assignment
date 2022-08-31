@@ -20,10 +20,10 @@ gap:30px;
 color:white;
 `
 export const TalkToSalesBtn = styled.button`
-border:1px solid white;
+border:${props => props.icon ? "1px solid #541554" : "1px solid white"};
 padding:15px 25px;
 background:transparent;
-color:white;
+color:${props => props.icon ? "#541554" : "#fff"};
 border-radius:5px;
 text-transform:uppercase;
 font-weight:bolder;
@@ -31,10 +31,10 @@ font-weight:bolder;
 export const TryForFreeBtn = styled.button`
 border:1px solid white;
 padding:15px 25px;
-background:white;
+background:${props => props.icon ? "#541554" : "#fff"};
 border-radius:5px;
 text-transform:uppercase;
-color:#541554;
+color: ${props => props.icon ? "#fff" : "#541554"};
 font-weight:bolder;
 
 `
@@ -93,17 +93,40 @@ margin-top:70px;
 padding:0 120px;
 `
 export const ResponseTitle = styled.h4`
+text-align:${props => props.TeamsLargeSection ? "center" : "left"};
 font-size:2.5rem;
 text-transform:capitalize;
 `
 export const ResponseDesc = styled.p`
+text-align:${props => props.TeamsLargeSection ? "center" : "left"};
 font-size: 18px;
 line-height:28px;
-margin:30px 0;
+margin:${props => props.TeamsLargeSection ? "15px" : "30px"};
+display:${props => props.TeamsLargeSection ? "inline-block" : "block"};
+
+
 `
 export const ResponseExternalLink = styled.a`
 color:#1264a3;
 display: flex;
 align-items:center;
 gap:10px
+`
+
+//Teams large section
+export const TeamsLargeSectionStyled = styled.section`
+padding:40px 120px;
+`
+export const TeamsLargeIconDiv = styled.div`
+padding:${props => props.firstIcon ? " 0 100px " : "0"};
+display:flex;
+justify-content:space-between;
+`
+export const SpanWithIcon = styled.span`
+background-color:gray;
+padding:10px;
+border-radius:40px;
+display:flex;
+align-items:center;
+gap:8px;
 `
