@@ -1,3 +1,4 @@
+import AnotherTeamsLargeSection from './Components/AnotherTeamsLargeSection';
 import Banner from './Components/Banner';
 import Brand from './Components/Brand';
 import Navbar from './Components/Share/Navbar';
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <Brand />
       <TeamsLargeSection />
+      <AnotherTeamsLargeSection />
     </>
   );
 }

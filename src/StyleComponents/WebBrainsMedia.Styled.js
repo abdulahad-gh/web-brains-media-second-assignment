@@ -90,7 +90,11 @@ justify-content:space-between;
 align-items:center;
 gap:100px;
 margin-top:70px;
-padding:0 120px;
+padding:${props => props.another ? "0" : "0 120px"};
+`
+export const RoundedDiv = styled.video`
+border-top-right-radius: 900px;
+border-bottom-right-radius: 900px;
 `
 export const ResponseTitle = styled.h4`
 text-align:${props => props.TeamsLargeSection ? "center" : "left"};
@@ -99,10 +103,11 @@ text-transform:capitalize;
 `
 export const ResponseDesc = styled.p`
 text-align:${props => props.TeamsLargeSection ? "center" : "left"};
-font-size: 18px;
+font-size: ${props => props.italic ? "25px" : "18px"};
 line-height:28px;
 margin:${props => props.TeamsLargeSection ? "15px" : "30px"};
 display:${props => props.TeamsLargeSection ? "inline-block" : "block"};
+font-style:${props => props.italic ? "italic" : "normal"}
 
 
 `
@@ -120,13 +125,35 @@ padding:40px 120px;
 export const TeamsLargeIconDiv = styled.div`
 padding:${props => props.firstIcon ? " 0 100px " : "0"};
 display:flex;
-justify-content:space-between;
+justify-content:${props => props.secondIcon ? "flex-start" : "space-between"}};
+gap:100px
+`
+export const TeamsLargeIconThird = styled.div`
+display:flex;
+justify-content:flex-end;
+gap:150px;
+margin-top:30px;
 `
 export const SpanWithIcon = styled.span`
-background-color:gray;
-padding:10px;
+background-color:rgba(0.5,0.5,8,.1);
+padding:10px 20px;
 border-radius:40px;
 display:flex;
 align-items:center;
 gap:8px;
+`
+export const ParcentCont = styled.div`
+display:flex;
+gap:220px;
+padding:100px 100px 0 100px;
+justify-content:space-between;
+`
+export const ParcentSpan = styled.span`
+color:#541554;
+font-size:60px;
+font-weight:bold;
+`
+export const TeamsP = styled.p`
+text-align:center;
+padding:0 100px 10px;
 `
