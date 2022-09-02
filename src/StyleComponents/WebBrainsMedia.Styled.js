@@ -61,9 +61,9 @@ color:white;
 `
 export const ButtonDiv = styled.div`
 display:flex;
-justify-content:center;
+justify-content:${props => props.NewDigitaBtnCont && "center"};
 gap:10px;
-margin-top:${props => props.NewDigitaBtnCont && "30px"}
+margin-top:${props => props.NewDigitaBtnCont && "30px"};
 `
 export const Span = styled.span`
 color:#ecb22e;
@@ -76,7 +76,7 @@ background:#f4ede4;
 
 `
 export const H3 = styled.h3`
-text-align:center;
+text-align:${props => props.DefaultAlign ? "left" : "center"};
 font-size:.875rem;
 text-transform:uppercase;
 `
@@ -116,7 +116,7 @@ margin-left:${props => props.marginRemove && "0"};
 
 `
 export const ResponseExternalLink = styled.a`
-color:#1264a3;
+color:${props => props.Black ? "#000" : "#1264a3"};
 display: flex;
 align-items:center;
 gap:10px
@@ -201,10 +201,44 @@ color:${props => !props.WhiteLinkText ? "#1264a3" : "#fff"}
 
 //new digital hq
 export const NewDigitalHqSection = styled.section`
-padding:100px 0;
-;
+padding:150px 0 150px;
 text-align:center;
-background-color:#541554;
-border-bottom-left-radius:110px;
-border-bottom-right-radius:110px;
+background-image:url('https://i.ibb.co/vjvX46R/bg-new-digital.png');
+background-size:cover;
+background-repeat:no-repeat;
+`
+
+//footer section
+export const FooterSection = styled.section`
+display:grid;
+grid-template-columns:repeat(6,1fr);
+padding:0 120px;
+`
+export const FooterElement = styled.div`
+display:flex;
+flex-direction:column;
+gap:20px;
+`
+export const FooterBottom = styled.div`
+padding:40px 120px;
+`
+export const Hr = styled.hr`
+color:gray;
+`
+export const SocialLinks = styled.div`
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:50px;
+`
+export const LinkCont = styled.div`
+display:flex;
+gap:10px;
+`
+export const AnohterLink = styled.a`
+color:#1264a3;
+`
+export const CopyRightText = styled.p`
+font-size:12px;
 `
