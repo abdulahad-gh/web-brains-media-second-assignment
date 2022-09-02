@@ -6,12 +6,12 @@ const Brand = () => {
         <BrandSection>
             <H3>trusted by companies all over the world</H3>
             <BrandIconCont>
-                <img src='../Assets/Images/brand/brand.png' alt='brandIcon' />
-                <img src='../Assets/Images/brand/brand1.png' alt='brandIcon' />
-                <img src='../Assets/Images/brand/brand2.png' alt='brandIcon' />
-                <img src='../Assets/Images/brand/brand3.png' alt='brandIcon' />
-                <img src='../Assets/Images/brand/brand4.png' alt='brandIcon' />
-                <img src='../Assets/Images/brand/brand5.png' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png   ' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/68794/marketing/img/logos/company/_color/ibm.png' alt='brandIcon' />
+                <img src='https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png' alt='brandIcon' />
 
             </BrandIconCont>
             <BrandTwoSideContent>

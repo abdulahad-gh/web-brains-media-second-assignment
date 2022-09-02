@@ -97,17 +97,18 @@ border-top-right-radius: 900px;
 border-bottom-right-radius: 900px;
 `
 export const ResponseTitle = styled.h4`
-text-align:${props => props.TeamsLargeSection ? "center" : "left"};
-font-size:2.5rem;
+text-align:${props => !props.TeamsLargeSection ? "left" : "center"};
+font-size: ${props => props.decFontSize ? "2rem" : "2.5rem"};
 text-transform:capitalize;
 `
 export const ResponseDesc = styled.p`
 text-align:${props => props.TeamsLargeSection ? "center" : "left"};
 font-size: ${props => props.italic ? "25px" : "18px"};
 line-height:28px;
-margin:${props => props.TeamsLargeSection ? "15px" : "30px"};
+margin:${props => props.TeamsLargeSection ? "15px" : "0"};
 display:${props => props.TeamsLargeSection ? "inline-block" : "block"};
-font-style:${props => props.italic ? "italic" : "normal"}
+font-style:${props => props.italic ? "italic" : "normal"};
+margin-left:${props => props.marginRemove && "0"};
 
 
 `
@@ -148,6 +149,13 @@ gap:220px;
 padding:100px 100px 0 100px;
 justify-content:space-between;
 `
+export const NameTitle = styled.div`
+margin:20px 0;
+`
+export const NameTitleP = styled.p`
+font-weight:bold;
+`
+
 export const ParcentSpan = styled.span`
 color:#541554;
 font-size:60px;
@@ -155,5 +163,35 @@ font-weight:bold;
 `
 export const TeamsP = styled.p`
 text-align:center;
-padding:0 100px 10px;
+padding:40px 100px 10px;
+`
+
+//NewWay ToWork Section
+export const NewWayToWorkSection = styled.section`
+padding:58px 120px;
+background-color:#f4ede4;
+`
+export const CardContainer = styled.div`
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+gap:20px;
+margin-top:30px;
+`
+export const Card = styled.div`
+padding:10px;
+width:260px;
+height:400px;
+background-color:${props => props.BgColorCard ? "#4a154b" : "#fff"};
+color:${props => props.BgColorCard ? "#fff" : "#000"};
+display:flex;
+flex-direction:column;
+justify-content:space-between
+`
+export const CardLink = styled.div`
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+height:80px;
+text-transform:uppercase;
+color:${props => !props.WhiteLinkText ? "#1264a3" : "#fff"}
 `
