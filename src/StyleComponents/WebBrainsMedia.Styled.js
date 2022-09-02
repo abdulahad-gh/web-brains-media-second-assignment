@@ -22,7 +22,7 @@ color:white;
 export const TalkToSalesBtn = styled.button`
 border:${props => props.icon ? "1px solid #541554" : "1px solid white"};
 padding:15px 25px;
-background:transparent;
+background:${props => props.NewDigitaBtn ? "#fff" : "transparent"};
 color:${props => props.icon ? "#541554" : "#fff"};
 border-radius:5px;
 text-transform:uppercase;
@@ -61,7 +61,9 @@ color:white;
 `
 export const ButtonDiv = styled.div`
 display:flex;
+justify-content:center;
 gap:10px;
+margin-top:${props => props.NewDigitaBtnCont && "30px"}
 `
 export const Span = styled.span`
 color:#ecb22e;
@@ -100,6 +102,7 @@ export const ResponseTitle = styled.h4`
 text-align:${props => !props.TeamsLargeSection ? "left" : "center"};
 font-size: ${props => props.decFontSize ? "2rem" : "2.5rem"};
 text-transform:capitalize;
+color:${props => !props.WhiteColor ? "#000" : "#fff"}
 `
 export const ResponseDesc = styled.p`
 text-align:${props => props.TeamsLargeSection ? "center" : "left"};
@@ -194,4 +197,14 @@ align-items:flex-end;
 height:80px;
 text-transform:uppercase;
 color:${props => !props.WhiteLinkText ? "#1264a3" : "#fff"}
+`
+
+//new digital hq
+export const NewDigitalHqSection = styled.section`
+padding:100px 0;
+;
+text-align:center;
+background-color:#541554;
+border-bottom-left-radius:110px;
+border-bottom-right-radius:110px;
 `
