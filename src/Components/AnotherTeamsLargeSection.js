@@ -6,7 +6,7 @@ const AnotherTeamsLargeSection = () => {
         <>
             <BrandTwoSideContent another>
 
-                <RoundedDiv width='1500px' height='340px' src="https://a.slack-edge.com/93eaeb3/marketing/img/features/customer-awards/customer-awards-tmobile-quote-610x305@2x.mp4" autoPlay loop muted playsInline></RoundedDiv>
+                <RoundedDiv width='100%' height='340px' src="https://a.slack-edge.com/93eaeb3/marketing/img/features/customer-awards/customer-awards-tmobile-quote-610x305@2x.mp4" autoPlay loop muted playsInline></RoundedDiv>
 
 
                 <div>

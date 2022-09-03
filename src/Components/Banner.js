@@ -11,12 +11,12 @@ const Banner = () => {
                 <P><Span>Slack is free to try </Span> for as long as you like</P>
                 <ButtonDiv>
                     <TryForFreeBtn>sign up with email address</TryForFreeBtn>
-                    <TalkToSalesBtn>sign up with googlea</TalkToSalesBtn>
+                    <TalkToSalesBtn BtnNone>sign up with googlea</TalkToSalesBtn>
 
                 </ButtonDiv>
             </div>
             <div >
-                <video width='700px' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/hero-product-ui.webm" autoPlay loop muted playsInline></video>
+                <video width='100%' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/hero-product-ui.webm" autoPlay loop muted playsInline></video>
             </div>
 
         </BannerSection>

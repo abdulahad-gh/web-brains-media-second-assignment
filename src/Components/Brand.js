@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrandIconCont, BrandSection, BrandTwoSideContent, H3, ResponseDesc, ResponseExternalLink, ResponseTitle } from '../StyleComponents/WebBrainsMedia.Styled'
+import { BrandIconCont, BrandSection, BrandTwoSideContent, H3, ResponseDesc, ResponseExternalLink, ResponseTitle, VideoPart } from '../StyleComponents/WebBrainsMedia.Styled'
 
 const Brand = () => {
     return (
@@ -16,7 +16,7 @@ const Brand = () => {
             </BrandIconCont>
             <BrandTwoSideContent>
                 <div>
-                    <video width='600px' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/connectedness.webm" autoPlay loop muted playsInline></video>
+                    <VideoPart width='100%' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/connectedness.webm" autoPlay loop muted playsInline></VideoPart>
                 </div>
                 <div>
                     <ResponseTitle>bring your team <br /> together</ResponseTitle>
@@ -32,12 +32,12 @@ const Brand = () => {
                     <ResponseExternalLink href="https://"><span>Learn more about flexible communication</span> <i class="fa-solid fa-arrow-right-long"></i></ResponseExternalLink>
                 </div>
                 <div>
-                    <video width='600px' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/flexibility.webm" autoPlay loop muted playsInline></video>
+                    <VideoPart width='100%' height='400px' src="https://a.slack-edge.com/9689dea/marketing/img/homepage/e2e-prospects/animations/webm/flexibility.webm" autoPlay loop muted playsInline></VideoPart>
                 </div>
             </BrandTwoSideContent>
             <BrandTwoSideContent>
                 <div>
-                    <video width='600px' height='400px' src="https://a.slack-edge.com/221d25b/marketing/img/homepage/e2e-prospects/animations/webm/speed.webm" autoPlay loop muted playsInline></video>
+                    <VideoPart width='100%' height='400px' src="https://a.slack-edge.com/221d25b/marketing/img/homepage/e2e-prospects/animations/webm/speed.webm" autoPlay loop muted playsInline></VideoPart>
                 </div>
                 <div>
                     <ResponseTitle>Move faster with your <br />tools in one place</ResponseTitle>
